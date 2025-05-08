@@ -22,7 +22,7 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class RegisterComponent {
 
-  signupForm!: FormGroup;
+signupForm!: FormGroup;
 hidePassword = true;
 
 constructor(private fb: FormBuilder,
