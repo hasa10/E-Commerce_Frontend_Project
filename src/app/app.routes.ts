@@ -4,16 +4,34 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
 export const routes: Routes = [{
-    path: "",
+    path:"",
     component:MainDashboardComponent,
     children:[{
         path:"login",
         component:LoginComponent
-    },{
-        path:"register",
+    },
+    {
+        path:"signup",
         component:RegisterComponent
-    },{
+    },
+    {
         path:"order",
         component:RegisterComponent
     }]
-}];
+},
+{
+    path: '',
+    component: MainDashboardComponent, 
+    children: [
+      {
+        path: "admin/dashboard",
+        loadComponent: () =>
+          import('./admin/component/admin-dashboard/admin-dashboard.component').then(m => m.AdminDashboardComponent),
+      },{
+        path: "customer/dashboard",
+        loadComponent: () =>
+          import('./customer/component/customer-dashboard/customer-dashboard.component').then(m => m.CustomerDashboardComponent),
+      }]
+    }
+
+];

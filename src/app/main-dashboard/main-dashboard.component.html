@@ -1,12 +1,4 @@
-<mat-toolbar color="primary" class="navbar">
-  <span class="navbar-brand">E-Commerce</span>
-  <span class="spacer"></span>
-  <button mat-button routerLink="/order" routerLinkActive="active">Track Order</button>
-  <button mat-button routerLink="/register" routerLinkActive="active">Register</button>
-  <button mat-button routerLink="/login" routerLinkActive="active">Login</button>
-</mat-toolbar>
-
-<div *ngIf="isCustomerLoggedIn && isAdminLoggedIn">
+<div *ngIf="!isCustomerLoggedIn && !isAdminLoggedIn">
   <mat-toolbar color="primary" class="navbar">
     <span class="navbar-brand">E-Commerce</span>
     <span class="spacer"></span>
@@ -46,8 +38,4 @@
 
   <div style="display: flex; justify-content: center; align-items: center; min-height: 90vh;">
     <router-outlet></router-outlet>
-</div>
-
-<div style="display: flex; justify-content: center; align-items: center; min-height: 90vh;">
-  <router-outlet></router-outlet>
 </div>
