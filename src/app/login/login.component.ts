@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { AuthService } from '../auth.service';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -15,7 +15,7 @@ import { UserStorageService } from '../storoge/user-storage.service';
   imports: [MatCardModule,
       MatFormFieldModule,
       MatInputModule,
-      ReactiveFormsModule,MatIconModule],
+      ReactiveFormsModule,MatIconModule,RouterLink],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
