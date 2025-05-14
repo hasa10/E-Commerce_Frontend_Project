@@ -8,7 +8,7 @@ export const routes: Routes = [{
     path:"",
     component:MainDashboardComponent,
     children:[{
-        path:"login",
+        path:"",
         component:LoginComponent
     },
     {
@@ -32,11 +32,12 @@ export const routes: Routes = [{
         path: "customer/dashboard",
         loadComponent: () =>
           import('./customer/component/customer-dashboard/customer-dashboard.component').then(m => m.CustomerDashboardComponent),
+      },
+      {
+        path:"admin/category",
+        component:PostCategoryComponent
       }]
-    },
-    {
-      path:"admin/category",
-      component:PostCategoryComponent
     }
+    
 
 ];
