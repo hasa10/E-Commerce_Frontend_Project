@@ -3,6 +3,7 @@ import { MainDashboardComponent } from './main-dashboard/main-dashboard.componen
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { PostCategoryComponent } from './admin/component/post-category/post-category.component';
+import { PostProductComponent } from './admin/component/post-product/post-product.component';
 
 export const routes: Routes = [{
     path:"",
@@ -36,6 +37,9 @@ export const routes: Routes = [{
       {
         path:"admin/category",
         component:PostCategoryComponent
+      },{
+        path: "admin/product",
+        component: PostProductComponent
       }]
     }
     
