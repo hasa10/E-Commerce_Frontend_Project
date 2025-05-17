@@ -9,7 +9,7 @@ export const routes: Routes = [{
     path:"",
     component:MainDashboardComponent,
     children:[{
-        path:"login",
+        path:"",
         component:LoginComponent
     },
     {

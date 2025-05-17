@@ -19,7 +19,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   templateUrl: './admin-dashboard.component.html',
   styleUrl: './admin-dashboard.component.css'
 })
-export class DashboardComponent {
+export class AdminDashboardComponent {
 
   products: any[] = [];
   searchProductForm: FormGroup;
