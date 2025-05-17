@@ -16,8 +16,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   selector: 'admin-dashboard',
   standalone: true,
   imports: [MatCard, MatDividerModule, NgFor, RouterLink, MatButtonModule, MatInputModule, MatFormFieldModule, MatIconModule, ReactiveFormsModule],
-  templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.css'
+  templateUrl: './admin-dashboard.component.html',
+  styleUrl: './admin-dashboard.component.css'
 })
 export class DashboardComponent {
 
